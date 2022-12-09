@@ -1,0 +1,373 @@
+html{
+    scroll-behavior: smooth;
+    height: 100%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+
+.dhames1{
+    height: 40px;
+    width: 130px;
+    padding-left: 15px;
+}
+
+.navbar{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    transition: top 0.3s;
+    background-color: orange;
+    padding: 5px;
+    z-index: 3;
+}
+
+.navbar a:hover{
+    color: rgb(255, 255, 255);
+}
+
+
+nav{
+    display: flex;
+    z-index: 10;
+    justify-content: space-between;
+}
+
+nav ul li{
+    font-size: 18px;
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+    font-weight: bold;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.intro{
+    background-image: url(img/angas.gif);
+    background-size: cover;
+    background-repeat: none;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+}
+
+.typing-erase {
+    margin: 0;
+    white-space: nowrap;
+    max-width: max-content;
+    overflow: hidden; 
+    border-right: .05em solid #464545; 
+
+    animation: 
+      4s typing-erase 4s steps(50, end) infinite,
+      blink-caret .5s step-end infinite;
+  }
+
+  @keyframes typing-erase {
+    0% { width: 0 }
+    80% { width: 100% }
+    90%, 100% { width: 0 }
+  }
+
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: gray }
+}
+
+.content{
+    padding-top: 21%;
+    margin-left: 38%;
+}
+
+.content h1{
+    font-size: 60px;
+    color: white;
+    margin-bottom: 5px;
+    text-shadow: 4px 4px orange;
+}
+
+span{
+    color: orange;
+    line-height: 22px;
+    text-shadow: 4px 4px black;
+}
+
+.content a{
+    background: #212121;
+    padding: 10px 18px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    display: inline-block;
+    margin: 30px 0;
+    border-radius: 5px;
+}
+
+.content p{
+    color: orange;
+    font-size: 17px;
+    text-shadow: 3px 3px black;
+}
+
+.content h2{
+    color: orange;
+    font-size: 32px;
+    text-shadow: 3px 3px black;
+}
+
+.pics{
+    width: 62%;
+    height: 60%;
+    position: absolute;
+    bottom: 100px;
+
+}
+
+.pics img{
+    position: absolute;
+    bottom: 0;
+    transform: translateX(-50);
+    transition: top 1s, left 1s;
+}
+
+.shape{
+    height: 110%;
+    width: 40%;
+    left: 15%;
+    bottom: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.ako{
+    height: 73%;
+    width: 35%;
+    left: 20%;
+    bottom: 0;
+    z-index: 2;
+}
+
+.pics:hover .shape{
+    top: 40px;
+}
+
+.pics:hover .ako{
+     left: 30%;
+}
+
+.space1{
+    height: 15px;
+    width: 100%;
+    background-color: orange;
+}
+
+.sidepic{
+    height: 620px;
+    width: 310px;
+    float: left;
+    border-radius: 25px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    border: 5px solid orange;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: url(img/angas.gif);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: none;
+}
+
+.aboutme{
+    text-align: center;
+}
+
+.cardam{
+    border: 3px solid black;
+    width: 200px;
+    height: 280px;
+    margin: 15px 15px 15px 70px;
+    border-radius: 30px;
+    background-color: rgb(248, 180, 116);
+    padding: 10px 20px;
+    transition: 0.5s;
+}
+
+.cardam:hover{
+    box-shadow: 0 8px 18px 0 orange
+}
+
+.cardam p:hover{
+    cursor: none;
+}
+
+.cardam p{
+    font-size: 17px;
+    padding-top: 21px;
+}
+
+.ambox{
+    display: flex;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.tles{
+    width: 80px;
+    height: 80px;
+}
+
+.bsu{
+    width: 80px;
+    height: 80px;
+}
+
+.aboutme h4{
+    padding-left: 150px;
+    padding-top: 90px;
+    font-size: 80px;
+    color: orange;
+    text-shadow: 4px 4px white;
+}
+
+.aboutme span{
+    color: orange;
+    text-shadow: 4px 4px white;
+}
+
+.aboutme p{
+    padding-left: 15%;
+    font-size: 20px;
+    color: white;
+    text-shadow: 1px 1px black;
+    font-weight: bold;
+}
+
+.container2{
+    text-align: center;
+    background-image: url(img/pedena.gif);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: none;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.container2 h1{
+    font-size: 80px;
+    text-shadow: 4px 4px orange;
+}
+
+.box2{
+    padding-top: 70px;
+    padding-left: 5%;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    margin: 60px ;
+    border: 4px solid black;
+    border-radius: 30px;
+    transition: 0.3s;
+    background-color: rgb(248, 180, 116);
+    width: 70%;
+    height: 130px;
+    padding: 20px 90px ;
+}
+  
+.card:hover {
+    box-shadow: 0 8px 18px 0 black
+}
+
+.card h4{
+    padding-top: 30px;
+    line-height: 25px;
+    font-size: 30px;
+}
+
+.card p{
+    padding-top: 15px;
+    font-size: 17px;
+}
+
+.ghost{
+    float: left;
+    width: 130px;
+    height: 130px;
+}
+
+.music{
+    float: left;
+    width: 130px;
+    height: 130px;
+}
+
+.lestwins{
+    float: left;
+    width: 130px;
+    height: 130px;
+}
+  
+.dulo{
+    width: 100%;
+    height: 90px;
+    margin-bottom: 0;
+}
+
+.contact{
+    display: flex;
+    padding-top: 10px;
+    background-color: rgb(248, 180, 116);
+}
+
+.fb{
+    width: 110px;
+    height: 70px;
+}
+
+.twitter{
+    width: 70px;
+    height: 60px;
+}
+
+.tiktok{
+    width: 105px;
+    height: 60px;
+}
+
+.h3mo{
+    margin-left: 100px;    
+}
+
+.contact h3{
+    margin-left: 35%;
+    padding-top: 25px;
+}
+
+.contact img{
+    transition: top 1s;
+    transform: translateX(-50);
+}
+
+.contact:hover .fb{
+    top: 10px;
+}
+
+
